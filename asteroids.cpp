@@ -24,6 +24,7 @@ using namespace std;
 #include <GL/glx.h>
 #include "log.h"
 #include "fonts.h"
+#include "masonP.cpp"
 
 //defined types
 typedef float Flt;
@@ -739,6 +740,8 @@ void render()
 	Rect r;
 	glClear(GL_COLOR_BUFFER_BIT);
 	//
+	extern void showName();
+	showName();
 	r.bot = gl.yres - 20;
 	r.left = 10;
 	r.center = 0;
